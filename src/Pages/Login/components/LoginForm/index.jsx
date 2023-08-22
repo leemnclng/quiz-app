@@ -16,7 +16,7 @@ const LoginForm = ()=> {
             },
         ]}
         >
-        <Input size="large" prefix={<UserOutlined  />}/>
+        <Input size="large" placeholder="Username" prefix={<UserOutlined  />}/>
         </Form.Item>
 
         <Form.Item
@@ -28,7 +28,7 @@ const LoginForm = ()=> {
             },
         ]}
         >
-        <Input.Password size="large" prefix={<UnlockFilled />}/>
+        <Input.Password size="large" placeholder="Password"  prefix={<UnlockFilled />}/>
         </Form.Item>
 
         <Form.Item>
