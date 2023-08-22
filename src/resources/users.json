@@ -1,0 +1,6 @@
+{
+    "sampleUsers":[{
+        "username": "tester1234",
+        "password": "somepass123"
+    }]
+}
