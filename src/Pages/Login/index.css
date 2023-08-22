@@ -1,4 +1,14 @@
 .login-container {
-    height: 200px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+}
+
+.login-content {
+    text-align: center;
+    background: rgb(131, 189, 228);
+    padding: 5rem 5rem;
+    border-radius: 12px;
 }
