@@ -1,0 +1,104 @@
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-wrapper {
+    background: #fff;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+.nav-wrapper div:nth-child(odd) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-wrapper .logo {
+    align-items: center;
+    font-weight: bold;
+}
+
+.menu-wrapper {
+    width: 600px;
+}
+
+.menu-item {
+    font-weight: 600;
+}
+
+.signup-btn {
+    background: #a0ddff;
+}
+
+button span {
+    font-weight: 600;
+}
+
+/* Text Styles */
+.text-s {
+    font-size: 1rem;
+}
+
+.text-m {
+    font-size: 1.5rem;
+}
+
+.text-l {
+    font-size: 1.8rem;
+}
+
+.text-xl {
+    font-size: 2rem;
+}
+
+.text-xxl {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* SVG Graphic */
+
+.spacer {
+    aspect-ratio: 900/420;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('./components/MainContent/graphic/layered-peaks.svg');
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.main-content span {
+    width: 800px;
+    text-align: center;
+}
+
+.main-content p {
+    width: 600px;
+    text-align: center;
+}
+
+.quiz-btn span {
+    width: 16rem;
+    font-size: 26px;
+
+}
+
+.quiz-btn {
+    padding: 1.4rem 1.8rem;
+    border-radius: 48px;
+    background: #a0ddff;
+}
