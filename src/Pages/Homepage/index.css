@@ -94,11 +94,12 @@ button span {
 .quiz-btn span {
     width: 16rem;
     font-size: 26px;
-
 }
 
 .quiz-btn {
-    padding: 1.4rem 1.8rem;
+    display: flex;
+    align-items: center;
+    padding: 2.2rem 1.8rem;
     border-radius: 48px;
     background: #a0ddff;
 }
