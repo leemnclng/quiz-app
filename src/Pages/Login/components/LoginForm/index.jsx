@@ -16,6 +16,7 @@ const LoginForm = ()=> {
     const handleSubmit = (values) => {
         setUsername(values.username)
         setPassword(values.password);
+        form.resetFields();
     }
 
     useEffect(()=>{
@@ -36,13 +37,10 @@ const LoginForm = ()=> {
     });
 
     const handleError = () => {
-        if(storedUser !== null) {
-            return (storedUser.status === 'success' ?
-            <Alert message={storedUser.message} type="success" showIcon closable/> :
-            <Alert message={storedUser.message} type="error" showIcon closable/>
-            )
-        }
-        return '';
+        return (storedUser.status === 'success' ? 
+            <Alert message={storedUser.message} type="success" showIcon  /> :
+            <Alert message={storedUser.message} type="error" showIcon />
+        )
     }
 
     return (
