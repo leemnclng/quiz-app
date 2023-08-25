@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu } from 'antd';
+import { useNavigate } from 'react-router-dom';
 
 const items = [
     {
@@ -9,7 +10,7 @@ const items = [
     },
     {
         label: 'Dashboard',
-        key: 'app',
+        key: 'dashboard',
         // icon: <AppstoreOutlined />,
     },
     {
@@ -18,11 +19,12 @@ const items = [
     },
 
 ];
+
 const NavigationMenu = () => {
+    const Navigate = useNavigate();
     const [current, setCurrent] = useState('mail');
     const onClick = (e) => {
-        console.log('click ', e);
-        setCurrent(e.key);
+        return Navigate(e.key)
     };
     return (
         <>
