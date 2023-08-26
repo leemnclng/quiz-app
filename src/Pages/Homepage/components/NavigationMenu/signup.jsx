@@ -6,11 +6,11 @@ const SignUp = () => {
     return (
         <>
             <Space>
-                <a href="#">
-                    <Button type="link" size='large' onClick={Navigate('/auth/login')}>
-                        Log In
-                    </Button>
-                </a>
+
+                <Button type="link" size='large' onClick={() => { return Navigate('/auth/login') }}>
+                    Log In
+                </Button>
+
                 <a href="#">
                     <Button shape="round" size='large' className='signup-btn text-m'>
                         Sign Up
