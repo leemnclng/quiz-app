@@ -1,25 +1,21 @@
 import { useDashboardPageContext } from "../../properties/DashboardPageContext";
-import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const DashboardContentPageComponent = () => {
     const Navigate = useNavigate();
-    const acquiredData = localStorage.getItem('user');
     const [isLoading, setIsLoading] = useState(true);
     const handleLogout = () => {
         localStorage.clear();
-        Navigate('/');
+        Navigate('/home');
+        location.reload();
     }
-
+    
     useEffect(()=>{
-        if(acquiredData === null) {
-            Navigate('/auth/login');
-        }
-        return()=>{
+        setTimeout(()=>{
             setIsLoading(false);
-        }
+        },2000)
     })
-
     if(isLoading) {
         return(
             <h1>Loading....</h1>

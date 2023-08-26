@@ -24,7 +24,7 @@ const LoginForm = () => {
             if (storedUser.valid) {
                 localStorage.setItem('user', JSON.stringify({ userName: username, userPass: password }))
                 setTimeout(() => {
-                    return Navigate('/')
+                    return Navigate('/home/dashboard')
                 }, 2000)
             }
         }
@@ -32,7 +32,7 @@ const LoginForm = () => {
 
     useEffect(() => {
         if (acquiredData !== null) {
-            return Navigate('/dashboard')
+            return Navigate('/home/dashboard')
         }
     });
 
